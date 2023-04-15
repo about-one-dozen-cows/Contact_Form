@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Form</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <form action="#" method="post" spellcheck="false" autocomplete="off" >
+      
+      <fieldset>
+
+        <section class="name">
+            <h2>Name</h2>
+
+            <dl>
+              <dt><label for="firstname">First name</label></dt>
+              <dd><input type="text" name="firstname" placeholder="Jane" id="firstname" required></dd>
+            </dl>
+            
+            <dl>
+              <dt><label for="lastname">Last name</label></dt>
+              <dd><input type="text" name="lastname" placeholder="Doe" id="lastname" required></dd>
+            </dl>
+        </section>
+        
+        <section class="contact">
+          <h2>Contact</h2>
+
+          <dl>
+            <dt><label for="email">Email</label></dt>
+            <dd><input type="email" name="email" id="email" placeholder="janedoelovespuppies@example.com" required></dd>
+          </dl>
+
+          <fieldset>
+            <legend>Phone number</legend>
+            
+            <dl>
+              <dt><label for="phonenumber">Phone number</label></dt>
+              <dd id="phone-type">
+                <select name="phone-type">
+                  <option value="home" selected>Home</option>
+                  <option value="business">Business</option>
+                  <option value="mobile">Mobile</option>
+                </select>
+              </dd>
+              
+              <dd id="phone-number"><input type="tel" id="phonenumber" name="phone-number" placeholder="(###)-###-#####" required></dd>
+            </dl>
+
+          </fieldset>
+            
+          
+        </section>
+
+        <section class="address">
+          <h2>Address</h2>
+          <fieldset>
+            <legend>Address</legend>
+            <dl>
+              <dt><label for="city">City</label></dt>
+              <dd><input type="text" name="city" id="city" placeholder="Providence" required></dd>
+
+              <dt><label for="state">State</label></dt>
+              <dd>
+                <select name="state" id="state">
+                  <option>AK</option>
+                  <option>AL</option>
+                  <option>AR</option>
+                  <option>AZ</option>
+                  <option>CA</option>
+                  <option>CO</option>
+                  <option>CT</option>
+                  <option>DC</option>
+                  <option>DE</option>
+                  <option>FL</option>
+                  <option>GA</option>
+                  <option>HI</option>
+                  <option>IA</option>
+                  <option>ID</option>
+                  <option>IL</option>
+                  <option>IN</option>
+                  <option>KS</option>
+                  <option>KY</option>
+                  <option>LA</option>
+                  <option>MA</option>
+                  <option>MD</option>
+                  <option>ME</option>
+                  <option>MI</option>
+                  <option>MN</option>
+                  <option>MO</option>
+                  <option>MS</option>
+                  <option>MT</option>
+                  <option>NC</option>
+                  <option>ND</option>
+                  <option>NE</option>
+                  <option>NH</option>
+                  <option>NJ</option>
+                  <option>NM</option>
+                  <option>NV</option>
+                  <option>NY</option>
+                  <option>OH</option>
+                  <option>OK</option>
+                  <option>OR</option>
+                  <option>PA</option>
+                  <option selected>RI</option>
+                  <option>SC</option>
+                  <option>SD</option>
+                  <option>TN</option>
+                  <option>TX</option>
+                  <option>UT</option>
+                  <option>VA</option>
+                  <option>VT</option>
+                  <option>WA</option>
+                  <option>WI</option>
+                  <option>WV</option>
+                  <option>WY</option>
+                </select>
+              </dd>
+
+              <dt><label for="zip">Zip</label></dt>
+              <dd><input type="text" pattern="[0-9]{5}" maxlength="5" name="zip" id="zip" placeholder="02860" required></dd>
+            </dl>
+          </fieldset>
+        </section>
+        
+        <section class="about">
+          <h2>About you</h2>
+
+          <dl>
+            <dt><label for="favorite-color">Which of these colors do you like the best?</label></dt>
+            <dd>
+              <select id="favorite-color">
+
+                <option style="background-color: #CCD5AE;">Tea green</option>
+                <option style="background-color: #E9EDC9;">Beige</option>
+                <option style="background-color: #FEFAE0;">Cornsilk</option>
+                <option style="background-color: #FAEDCD;">Papaya whip</option>
+                <option style="background-color: #D4A373;">Buff</option>
+              </select>
+            </dd>
+
+            <dt><label for="web-technologies">Which web technologies do you want to learn?</label></dt>
+            <dd>
+              <select id="web-technologies" size="5" multiple>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>Javascript</option>
+                <option>Ruby</option>
+                <option>Rails</option>
+                <option>Java</option>
+                <option>C#</option>
+                <option>Python</option>
+              </select>
+            </dd>
+
+            <dt><label for="favorite-character">Which Undertale character is your favorite?</label></dt>
+            <dd>
+              <!-- make font size not zero-->
+              <ul>
+                <li>
+                  <input type="radio" name="favorite-character" id="sans" required>
+                  <label for="sans">Sans</label>
+                  
+                </li>
+
+                <li>
+                  <input type="radio" name="favorite-character" id="papayrus" required>
+                  <label for="papayrus">Papayrus</label>
+                </li>
+
+                <li>
+                  <input type="radio" name="favorite-character" id="azriel" required>
+                  <label for="azriel">Azriel</label>
+                </li>
+
+                <li>
+                  <input type="radio" name="favorite-character" id="flowey" checked required>
+                  <label for="flowey">Flowey</label>
+                </li>
+
+                <li>
+                  <input type="radio" name="favorite-character" id="toriel" required>
+                  <label for="toriel">Toriel</label>
+                </li>
+              </ul>
+              
+            </dd>
+          </dl>
+        </section>
+        
+        
+        <section class="comment">
+          <h2>Comment</h2>
+          <dl>
+            <dt><label for="comment">Leave us a comment</label></dt>
+            <dd>
+              <textarea id="comment" name="comment" rows="6" cols="80" wrap="hard" placeholder="Type your message here..."></textarea>
+            </dd>
+
+          </dl>
+         
+        </section>
+
+        <input type="hidden" id="timestamp" name="timestamp" value="2023-15-04">
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </fieldset>
+      
+    </form>
+</body>
+</html>
